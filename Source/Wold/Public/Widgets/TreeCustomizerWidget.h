@@ -28,6 +28,9 @@ public:
 		int CurrentRandomSeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TreeCustomizationCurrentValues")
+		float TrunkIrregularity;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TreeCustomizationCurrentValues")
 		FLinearColor LeafColorModifier;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TreeCustomizationCurrentValues")
