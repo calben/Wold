@@ -15,9 +15,12 @@ void ARamaUDPReceiver::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	Super::EndPlay(EndPlayReason);
 	//~~~~~~~~~~~~~~~~
-	UDPReceiver->Stop();
-	delete UDPReceiver;
-	UDPReceiver = nullptr;
+	if (UDPReceiver) {
+		UDPReceiver->Stop();
+		delete UDPReceiver;
+		UDPReceiver = nullptr;
+	}
+
 
 	//Clear all sockets!
 	//		makes sure repeat plays in Editor dont hold on to old sockets!
