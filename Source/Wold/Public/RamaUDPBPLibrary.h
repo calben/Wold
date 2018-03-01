@@ -25,13 +25,14 @@ struct FAnyCustomData
 		FString Name = "Tree!";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tree Creator")
-		float TrunkBendiness = 1;
+		int32 Seed = 1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tree Creator")
-		float Scale = 1.f;
+		float Irregularity = 1.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tree Creator")
-		FLinearColor Color = FLinearColor::Green;
+		FLinearColor LeafColor = FLinearColor::Green;
+
 
 	FAnyCustomData()
 	{}
@@ -40,9 +41,9 @@ struct FAnyCustomData
 FORCEINLINE FArchive& operator<<(FArchive &Ar, FAnyCustomData& TheStruct)
 {
 	Ar << TheStruct.Name;
-	Ar << TheStruct.TrunkBendiness;
-	Ar << TheStruct.Scale;
-	Ar << TheStruct.Color;
+	Ar << TheStruct.Seed;
+	Ar << TheStruct.Irregularity;
+	Ar << TheStruct.LeafColor;
 
 	return Ar;
 }
