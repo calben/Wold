@@ -18,10 +18,6 @@
 		{
 			"Name": "SteamVR",
 			"Enabled": false
-		},
-		{
-			"Name": "VictoryUMG",
-			"Enabled": true
 		}
 	]
 }
