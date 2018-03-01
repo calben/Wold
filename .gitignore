@@ -74,6 +74,15 @@ Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+# Plugin Ignores
+
+Plugins/UmgObjectSelector/Intermediate/*
+Plugins/UmgObjectSelector/Binaries/*
+
+Plugins/VictoryUMG/Intermediate/*
+Plugins/VictoryUMG/Binaries/*
+
+
 
 # Marketplace Content
 Content/InTreeCreator/*
