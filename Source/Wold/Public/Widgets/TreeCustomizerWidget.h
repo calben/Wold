@@ -31,6 +31,9 @@ public:
 		float TrunkIrregularity;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TreeCustomizationCurrentValues")
+		float LeavesAmount;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TreeCustomizationCurrentValues")
 		FLinearColor LeafColorModifier;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TreeCustomizationCurrentValues")
